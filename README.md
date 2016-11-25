@@ -125,4 +125,3 @@ Perl Artistic License 2.0
 
 This module is free software. It may be used, redistributed and/or modified
 under the same terms as Perl itself.
-
