@@ -4,7 +4,7 @@
 
 Starts a spot instance on Amazon Web Services (AWS) from your latest Amazon
 Machine Image (AMI) snap shot rather more conveniently than using the AWS EC2
-console to repetitively perform this task.
+console to perform this task.
 
 Offers a list of machine types of interest and their latest spot prices on
 which to run the latest AMI from which an instance can be started, snap shot
@@ -20,7 +20,7 @@ Perl can be obtained at:
 
 [http://www.perl.org](http://www.perl.org)
 
-You might need to install the following perl modules:
+You might need to install the following Perl modules:
 
     cpan install Data::Dump Term::ANSIColor Carp JSON POSIX Wx Alien::wxWidgets
 
@@ -38,7 +38,7 @@ Run:
 
     aws configure
 
-to set up the AWS CLI used by this script.  The last question asked by aws
+to set up the AWS CLI used by this script. The last question asked by aws
 configure:
 
     Default output format [json]:
@@ -76,9 +76,6 @@ to execute the following commands:
     aws ec2 request-spot-instances
     aws ec2 terminate-instances
 
-as these commands are used by the script to retrieve information required to
-start the spot instance.
-
 ### Perl
 
 To configure this Perl script you should use the AWS EC2 console at:
@@ -89,12 +86,12 @@ to start and snap shot an instance, in the process creating the security group
 and key pair whose details should be recorded below in this script in the
 section marked **user configuration**. Snap shot the running instance to create
 an Amazon Machine Image (AMI) which can then be restarted quickly and
-conveniently using this script. The script automatically finds the latest
-snapshot each time it is run so there is no need to update this script to
-account for each new snapshot made.
+conveniently using this script. This script automatically finds the latest
+snapshot run so there is no need to update this script to account for each new
+snapshot made.
 
 Configure this script by filling in the values in the **user configuration**
-area below.
+area below in the code.
 
 ## Operation
 
@@ -115,7 +112,7 @@ script will automatically start the latest such AMI created.
 
 Please reports bugs as issues on this project at GitHub:
 
-[https://github.com/philiprbrenan/StartSpotInstanceFromLatestAMI](https://github.com/philiprbrenan/StartSpotInstanceFromLatestAMI)
+[https://github.com/philiprbrenan/Ec2Console](https://github.com/philiprbrenan/Ec2Console)
 
 ## Licence
 
